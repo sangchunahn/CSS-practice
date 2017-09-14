@@ -1,0 +1,22 @@
+/* rotating icons in css. When a class is changed because of an event it checks if that class is there or not and rotates it. */
+
+md-expansion-panel-header:not(.mat-expanded) md-icon.down-arrow-rotate {
+ 
+}
+
+/* if the .mat-expanded is not there it will rotate */
+
+md-expansion-panel-header.mat-expanded md-icon.down-arrow-rotate {
+  transform: rotate(180deg);
+}
+
+/* <md-expansion-panel hideToggle="true">
+<md-expansion-panel-header>
+  <md-panel-title class="lane-panel-title">
+  Title
+  </md-panel-title>
+  <md-panel-description>
+    <md-icon class="down-arrow-rotate">arrow_drop_down</md-icon>
+  </md-panel-description>
+</md-expansion-panel-header>
+</md-expansion-panel> */
